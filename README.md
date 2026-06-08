@@ -2,7 +2,7 @@
 
 Sample automation workflows and tools built with AI for real business operations. These demos showcase what's possible when you stop doing things manually.
 
-**Built by [Alessandra Ritacco](https://github.com/aley-fiore3)** — Cvent Advanced Certified | AI Automation Consultant
+**Built by [Alessandra Desiderio](https://ithub.com/aley-fiore3)** — Cvent Advanced Certified | AI Automation Consultant
 
 ## What's Here
 

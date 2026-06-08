@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alessandra Desiderio — Automation Portfolio</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background: #0d1117;
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    header p { color: #8b949e; font-size: 1.05rem; max-width: 600px; margin: 0 auto; }
+    header .links { margin-top: 1.25rem; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+    header a { color: #58a6ff; text-decoration: none; font-size: 0.95rem; }
+    header a:hover { text-decoration: underline; }
+    main { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .intro { font-size: 1.05rem; color: #444; margin-bottom: 2.5rem; }
+    h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e1e4e8; }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      padding: 1.5rem;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .card-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      background: #f1f8ff;
+      color: #0366d6;
+      margin-bottom: 0.75rem;
+    }
+    .card-tag.green { background: #f0fff4; color: #22863a; }
+    .card-tag.orange { background: #fff8e1; color: #b26a00; }
+    .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .card .metric { font-size: 0.85rem; font-weight: 600; color: #22863a; margin-bottom: 0.5rem; }
+    .card p { font-size: 0.9rem; color: #555; margin-bottom: 1rem; }
+    .card a {
+      font-size: 0.85rem;
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .card a:hover { text-decoration: underline; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 3rem;
+    }
+    .skill-pill {
+      background: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #8b949e;
+      border-top: 1px solid #e1e4e8;
+    }
+    footer a { color: #0366d6; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Alessandra Desiderio</h1>
+  <p>Automation engineer who embeds with clients, finds what's actually broken, and builds things that get handed off and used.</p>
+  <div class="links">
+    <a href="https://alessandradesiderio.com">alessandradesiderio.com</a>
+    <a href="https://github.com/aley-fiore3">github.com/aley-fiore3</a>
+    <a href="https://github.com/aley-fiore3/event-data-tools">event-data-tools</a>
+  </div>
+</header>
+
+<main>
+  <p class="intro">
+    Each project below is a real engagement. The pattern is always the same: sit with the client, watch how the work actually gets done, find the gap between what they think the problem is and what it actually is, then build the smallest thing that solves it — and leave behind documentation they can operate without me.
+  </p>
+
+  <h2>Case Studies</h2>
+  <div class="card-grid">
+
+    <div class="card">
+      <span class="card-tag orange">Field Services</span>
+      <h3>Field Ops Dispatch Routing</h3>
+      <div class="metric">Technician utilization +31% &bull; After-hours calls -60%</div>
+      <p>A commercial HVAC owner was spending 2 hours every morning rebuilding dispatch state from scratch. Built a job normalization layer, tech check-in system, and a scoring engine that got him to 80% done before he sat down.</p>
+      <a href="https://github.com/aley-fiore3/fiore3-automation-demos/blob/main/case-studies/field-ops-dispatch-routing.md">Read the engagement &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-tag green">Nonprofit / CDFI</span>
+      <h3>Grant Tracking Automation</h3>
+      <div class="metric">0 missed deadlines &bull; 3 hrs/week reclaimed</div>
+      <p>A CDFI was tracking 40+ grant deadlines in a spreadsheet no one had agreed to maintain. Built a three-part alert system: weekly digest, 14-day warnings, and overdue flags — and deliberately didn't automate the funder emails.</p>
+      <a href="https://github.com/aley-fiore3/fiore3-automation-demos/blob/main/case-studies/grant-tracking-automation.md">Read the engagement &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Consulting / Sales Ops</span>
+      <h3>Intake Form Routing</h3>
+      <div class="metric">85% auto-routed &bull; 2-day lag eliminated</div>
+      <p>A consulting firm's shared inbox had become a liability. Built a rules-based router with a YAML config file the ops team could edit themselves, plus a 15% catch-all queue for edge cases that needed human judgment.</p>
+      <a href="https://github.com/aley-fiore3/fiore3-automation-demos/blob/main/case-studies/intake-form-routing.md">Read the engagement &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Events / Awards</span>
+      <h3>Document Generation at Scale</h3>
+      <div class="metric">340 letters in 4 minutes (was 2 days)</div>
+      <p>An event organizer was manually copy-pasting award letters one at a time. Built a python-docx template engine with a Google Sheets integration — and caught a silent data corruption bug in the API before it went out to recipients.</p>
+      <a href="https://github.com/aley-fiore3/fiore3-automation-demos/blob/main/case-studies/document-generation-at-scale.md">Read the engagement &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-tag green">Nonprofit / Advocacy</span>
+      <h3>Contact List Consolidation</h3>
+      <div class="metric">4,200 records reconciled across 3 platforms</div>
+      <p>An advocacy org had contacts split across Salesforce, Mailchimp, and a Google Sheet — with no single source of truth. Built a read-only reconciliation layer with conflict flagging. Didn't merge anything without human sign-off.</p>
+      <a href="https://github.com/aley-fiore3/fiore3-automation-demos/blob/main/case-studies/contact-list-consolidation.md">Read the engagement &rarr;</a>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Events / Ticketing</span>
+      <h3>Event Platform Migration</h3>
+      <div class="metric">3,200 records migrated, zero data loss</div>
+      <p>A ticketing platform migration with mismatched schemas and a hard deadline. Built a transformation pipeline with field-level validation and a pre-migration audit that caught 340 records with malformed emails before they got imported.</p>
+      <a href="https://github.com/aley-fiore3/fiore3-automation-demos/blob/main/case-studies/event-platform-migration.md">Read the engagement &rarr;</a>
+    </div>
+
+  </div>
+
+  <h2>Tools &amp; Repos</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>event-data-tools</h3>
+      <div class="metric">Python &bull; pandas &bull; CI/CD passing</div>
+      <p>Production-quality scripts for cleaning, deduplicating, and validating contact lists. Includes sample data, a passing GitHub Actions test suite, and a v1.0.0 release.</p>
+      <a href="https://github.com/aley-fiore3/event-data-tools">View on GitHub &rarr;</a>
+    </div>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-pill">Python (pandas, openpyxl, python-docx)</div>
+    <div class="skill-pill">Google Sheets / Apps Script</div>
+    <div class="skill-pill">REST API integration</div>
+    <div class="skill-pill">GitHub Actions / CI/CD</div>
+    <div class="skill-pill">Airtable, Notion, Salesforce</div>
+    <div class="skill-pill">Zapier / Make automation</div>
+    <div class="skill-pill">SQL (PostgreSQL, SQLite)</div>
+    <div class="skill-pill">Client-facing documentation</div>
+    <div class="skill-pill">Rapid prototyping</div>
+    <div class="skill-pill">Handoff-first engineering</div>
+  </div>
+
+</main>
+
+<footer>
+  <p>Alessandra Desiderio &bull; <a href="https://alessandradesiderio.com">alessandradesiderio.com</a> &bull; <a href="https://github.com/aley-fiore3">GitHub</a></p>
+</footer>
+
+</body>
+</html>

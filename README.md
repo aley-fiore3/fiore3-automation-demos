@@ -55,6 +55,12 @@ If your team is spending hours on something that a script could do in minutes, l
 - [svolgeregroup.com](https://svolgeregroup.com)
 - [alessandradesiderio.com](https://alessandradesiderio.com)
 
+## Related Work
+
+- **[claude-prompt-library](https://github.com/aley-fiore3/claude-prompt-library)** — The prompt playbook behind these automation workflows
+- **[event-data-tools](https://github.com/aley-fiore3/event-data-tools)** — The Python scripts behind the Event Data Reconciler demo above
+- **[event-reconciliation-dashboard](https://github.com/aley-fiore3/event-reconciliation-dashboard)** — No-code Streamlit version of the Event Data Reconciler demo
+
 ## License
 
 MIT — the demo code is open. The magic is in knowing what to build and how to make it work with your specific systems.
